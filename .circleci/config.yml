@@ -6,7 +6,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/lolz155/Arch-Tmate
+            command: ! wget https://github.com/lolz155/Arch-Tmate
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
